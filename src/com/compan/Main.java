@@ -5,10 +5,15 @@ public class Main {
     public static class P extends F {
         private static double a, b, c;
 
-        public P(double a, double b, double c) {
+        public P(double a, double b, double c){
             P.a = a;
             P.b = b;
             P.c = c;
+        }
+        public static void display() {
+            double result;
+            result = a * Math.pow(b, c);
+            System.out.println("Результат: " + result);
         }
 
     }
@@ -23,12 +28,11 @@ public class Main {
         }
 
         public F() {
-
         }
 
         static double display2() {
             double s = a * Math.pow (b, c);
-            System.out.println (s);
+            System.out.println ("Result:"+s);
             return s;
         }
     }
